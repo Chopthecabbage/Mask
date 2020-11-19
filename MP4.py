@@ -10,6 +10,7 @@ cap = cv2.VideoCapture(vid_location)
 # face_classifier = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 
 print("loading dlib.get_frontal_face_detector()...")
+# dlib에 있는 정면 얼굴 검출기로 입력 사진 img에서 얼굴을 검출하여 detector로 반환
 detector = dlib.get_frontal_face_detector()
 
 '''
