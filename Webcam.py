@@ -13,6 +13,7 @@ cols, rows, _ = frame.shape
 # np.zeros(shape, dtype, order)
 mask_overlay = np.zeros((cols, rows), np.uint8)
 
+# dlib에 있는 정면 얼굴 검출기로 입력 사진 img에서 얼굴을 검출 하여 detector로 
 detector = dlib.get_frontal_face_detector()
 # 랜드마크 찾기 위해서 -> 딥러닝 되어 있는... -> 찾은 얼굴에서 랜드마크를 예측하는 방식으로 되어 있다.
 predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
