@@ -7,6 +7,7 @@ import dlib
 
 # dlib -> 얼굴을 가져 오는 코드가 매우 간단하기 때문에 얼굴 감지 작업
 print("loading dlib.get_frontal_face_detector()...")
+# dlib에 있는 정면 얼굴 검출기로 입력 사진 img에서 얼굴을 검출하여 detector로 반환
 detector = dlib.get_frontal_face_detector()
 # predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
